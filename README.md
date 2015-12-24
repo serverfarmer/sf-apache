@@ -1,5 +1,5 @@
-sf-apache extension provides unified Apache 2.2 configuration for small production
-servers. It is compatible with the following operating systems:
+sf-apache22-server extension provides unified Apache 2.2 configuration for small
+production servers. It is compatible with the following operating systems:
 
 - Debian 4.x (Etch)
 - Debian 5.x (Lenny)

@@ -4,7 +4,7 @@
 
 
 
-base=/opt/sf-apache/templates/$OSVER
+base=/opt/sf-apache22-server/templates/$OSVER
 
 if [ -d /usr/local/cpanel ]; then
 	echo "skipping apache2 setup, system is controlled by cPanel"
