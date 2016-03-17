@@ -4,7 +4,7 @@
 
 
 
-base=/opt/sf-apache22-server/templates/$OSVER
+base=/opt/farm/ext/apache22-server/templates/$OSVER
 
 if [ -d /usr/local/cpanel ]; then
 	echo "skipping apache2 setup, system is controlled by cPanel"
@@ -14,7 +14,7 @@ elif [ ! -f $base/apache2.tpl ]; then
 	exit 1
 fi
 
-bash /opt/farm/scripts/setup/role.sh php-apache
+/opt/farm/scripts/setup/role.sh php-apache
 
 /etc/init.d/apache2 stop
 update-rc.d -f apache2 remove
@@ -34,4 +34,4 @@ if [ "$OSTYPE" = "debian" ]; then
 	fi
 fi
 
-bash /opt/farm/scripts/setup/role.sh sf-php
+/opt/farm/scripts/setup/role.sh sf-php
